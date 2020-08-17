@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="box-1">
+        {{recipe.name}}
+                <div class="center" style="margin-top: 10px" >
+                    <a (click)="nav()"><span data-attr="VIEW">VIEW</span><span data-attr="DETAILS">DETAILS</span></a>
+                </div>
+    </div>
+    <div class="box-2">
+        <span>click details</span>
+        <img [src]="recipe.image" alt="image NA" class="image-1">
+    </div>
+</div>

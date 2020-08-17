@@ -1,0 +1,12 @@
+<div class="container">
+    <span class="span" (click)="onclick()"><i class="material-icons" style="font-size: 28px;">cancel</i></span>
+    <input type="text" class="search" #search (input)="func1(search)" placeholder="Search here...">
+    <div style="color:white;text-align:center;margin-top: 100px;font-size: 45px;" *ngIf="newRecipes.length===0">
+        No recipes found
+    </div>
+    <div class="item">
+        <div style="margin-top: 20px;"></div>
+        <app-recipes-item *ngFor="let r of newRecipes"  [recipe]="r"></app-recipes-item>
+    </div>
+</div>
+

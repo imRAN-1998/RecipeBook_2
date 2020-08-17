@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.container{
+  font-family:'Pangolin', cursive;
+    z-index:20;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    /* filter:blur(5px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position: relative;
+    border-radius:30px;
+    width:40vw;
+    height:80vh;
+    z-index: 21;
+    filter: blur(0);
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.span{
+    cursor:pointer;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 20;
+    padding:10px;
+    color: red;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+}
+.inner-box-1{
+    position: relative;
+    width:100%;
+    height:40vh;
+}
+.inner-box-2{
+    position: relative;
+    background-color: white;
+    width:100%;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+.inner-span{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    /* border: 1px solid black; */
+    background: linear-gradient(to top,rgba(255,255,255,1),rgba(255,255,255,0));
+}
+.inner-box-2::-webkit-scrollbar{
+    display:none;
+}
+
+.price{
+    width:40%;
+    text-align: center;
+    margin-bottom:5px;
+}
+.price div{
+    border:1px solid red;
+    padding:10px;
+}
+.price div:nth-child(1){
+    color:white;
+    font-size: 20px;
+    background-color: rgb(241, 44, 44);
+}
+.category{
+    width:40%;
+    text-align: center;
+    margin-bottom:5px;
+}
+.category div{
+    border:1px solid rgb(46, 241, 46);
+    padding:10px;
+}
+.category div:nth-child(1){
+    color:white;
+    font-size: 20px;
+    background-color: rgb(46, 241, 46);
+}
+.description{
+    width:40%;
+    text-align: center;
+    margin-bottom:5px;
+}
+.description div{
+    border:1px solid blue;
+    padding:10px;
+}
+.description div:nth-child(1){
+    color:white;
+    font-size: 20px;
+    background-color: rgb(52, 18, 247);
+}
+
+.label{
+    border-radius:5px;
+    position: absolute;
+    top:5%;
+    right:5%;
+    padding:10px;
+    background-color: crimson;
+    color:white;
+    z-index: 20;
+}
+@media(max-width:650px){
+    .box{
+        width:80vw;
+    }
+}

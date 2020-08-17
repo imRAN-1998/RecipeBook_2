@@ -1,0 +1,16 @@
+<div class="container">
+  <app-header></app-header>
+<div style="width:80%;margin:auto;margin-top:110px">
+  <div style="background-image:url(../assets/images/pizza.jpg)" class="size" #size1 (mouseleave)="funcLeave()" (mouseenter)="funcEnter()"></div>
+  <!-- <img [src]="r.imagePath" alt="no image" class="size"> -->
+</div>
+<h1 class="text">Check out our tasty recipes</h1>
+<app-recipes-list></app-recipes-list>
+<router-outlet></router-outlet>
+</div>
+<!-- <div class="loading" *ngIf="loading">
+  <app-loading-spinner></app-loading-spinner>
+  <div>
+    <h1>loading...</h1>
+  </div>
+</div> -->

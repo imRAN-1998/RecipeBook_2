@@ -1,0 +1,27 @@
+
+<div  *ngIf="recipe" class="container" style="background: url({{recipe.image}});background-repeat: no-repeat;background-size: 100% 100%;
+background-position:center;">
+<div class="box">
+    <span class="span" (click)="nav()"><i class="material-icons" style="font-size: 28px;">cancel</i></span>
+    <span class="label">{{recipe.label ? recipe.label : 'No label'}}</span>
+    <div style="background: url({{recipe.image}});background-repeat: no-repeat;background-size: 100% 100%;
+    background-position:center;" class="inner-box-1">
+<span class="inner-span"></span>
+    </div>
+    <div class="inner-box-2">
+        <h1 style="color:navy;text-align: center;">{{recipe.name}}</h1>
+        <div class="price">
+            <div>Price</div>
+            <div>${{recipe.price}}</div>
+        </div>
+        <div class="category">
+            <div>Category</div>
+            <div>{{recipe.category}}</div>
+        </div>
+        <div class="description">
+            <div>Description</div>
+            <div>{{recipe.description}}</div>
+        </div>
+    </div>
+</div>
+</div>

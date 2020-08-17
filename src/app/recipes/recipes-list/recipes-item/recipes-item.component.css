@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.container{
+  background-color: rgb(230, 245, 230);
+    cursor:pointer;
+    display:flex;
+    width:100%;
+    border-bottom: 1px solid lightgrey;
+    padding:15px;
+    font-family:'Pangolin', cursive;
+}
+.box-1{
+    flex:5;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    /* flex-basis: 65%; */
+}
+.box-2{
+    flex: 1;
+    position: relative;
+    /* flex-basis: 35%; */
+}
+.box-2 span{
+    position: absolute;
+    z-index: 11;
+    top:0;
+    left:0;
+    width: 100px;
+    height: 100px;
+    
+    display: none;
+}
+.box-2:hover span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.image-1{
+    border-radius: 10px;
+    width:100px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+.center{
+    font-family: verdana;
+}
+a{
+    text-decoration: none;
+    font-size:19px;
+}
+a span{
+    padding:10px;
+    position: relative;
+    transition: 0.5s;
+}
+a span:nth-child(1){
+    color:#fff;
+    background:royalblue;
+}
+a span:nth-child(2){
+    color:#fff;
+    background:#bd7575;
+}
+a span:nth-child(1):before{
+    content:attr(data-attr);
+    padding:10px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin: top;
+    transform: translateY(0%)rotateX(90deg);
+    background:#f7f5f5;
+    color:royalblue;
+    transition: 0.5s;
+}
+a:hover span:nth-child(1):before{
+    transform: translateY(0%)rotateX(0deg);
+}
+a span:nth-child(1):after{
+    content:attr(data-attr);
+    padding:10px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin: bottom;
+    transform: translateY(0%)rotateX(0deg);
+    background:royalblue;
+    color:#f7f5f5;
+    transition: 0.5s;
+}
+a:hover span:nth-child(1):after{
+    transform: translateY(0%)rotateX(90deg);
+}
+
+a span:nth-child(2):before{
+    content:attr(data-attr);
+    padding:10px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin: bottom;
+    transform: translateY(0%)rotateX(90deg);
+    background:royalblue;
+    color:#f7f5f5;
+    transition: 0.5s;
+}
+a:hover span:nth-child(2):before{
+    transform: translateY(0%)rotateX(0deg);
+}
+a span:nth-child(2):after{
+    content:attr(data-attr);
+    padding:10px;
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin: top;
+    transform: translateY(0%)rotateX(0deg);
+    background:#f7f5f5;
+    color:royalblue;
+    transition: 0.5s;
+}
+a:hover span:nth-child(2):after{
+    transform: translateY(-0%)rotateX(90deg);
+}

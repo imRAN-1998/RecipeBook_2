@@ -1,0 +1,8 @@
+1.I have removed nodemudules to compress the source code which shd be less than 50mb
+2.i have add given the steps and screenshots(with instruction) in the MS word.
+3. I too hosted in firebase free server. but there is some problem in hosting I will rectify it within a day if possible, else U can check it locally using a local host (in text-editor)
+4. The link is 
+  --  https://project-recipe-e7cc0.web.app/
+  --  https://project-recipe-e7cc0.firebaseapp.com/
+
+5. Waiting for a response! :)
